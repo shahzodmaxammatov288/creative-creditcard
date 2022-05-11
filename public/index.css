@@ -1,0 +1,23 @@
+body {
+  background-image: linear-gradient(45deg, #2e02a8, #7183eb);
+}
+
+.card-wrapper {
+  height: 100vh;
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.card-wrapper h1 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .card-wrapper h1 {
+    font-size: 1.5rem;
+  }
+}

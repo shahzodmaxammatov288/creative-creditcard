@@ -1,0 +1,68 @@
+.formModal {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 777;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(0, 0, 0);
+}
+
+.overlay {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.formModal-container {
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  animation: formModal 0.3s linear 1 forwards alternate;
+}
+
+@keyframes formModal {
+  from {
+    transform: translateY(-50%) scale(0.7);
+  }
+  to {
+    transform: translate(0) scale(1);
+  }
+}
+
+.formModal-title {
+  text-align: center;
+}
+
+.closeFormModalBtn {
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  top: 15px;
+  position: absolute;
+  background-color: #fff;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .formModal-container {
+    max-width: 90%;
+  }
+  .closeFormModalBtn {
+    right: -15px;
+    top: -15px;
+  }
+}
